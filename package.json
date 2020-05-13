@@ -1,28 +1,28 @@
 {
-  "name": "html-js-css-boilerplate",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build:scss": "node-sass --output-style compressed -o dist/styles src/styles",
-    "watch:scss": "onchange -i -v \"./src/styles/*.scss\" -- yarn run build:scss",
-    "lint:js": "eslint --fix ./src/js/*.js",
-    "watch:js": "onchange -i -v \"./src/js/*.js\" -- yarn run lint:js",
-    "start": "browser-sync -s -f \"./index.html, dist/**/*, src/**/*\"",
-    "dev": "parallelshell \"yarn start\" \"yarn run watch:scss\" \"yarn run watch:js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "browser-sync": "^2.26.7",
-    "browsersync": "^0.0.1-security",
-    "node-sass": "^4.14.0",
-    "onchange": "^7.0.1"
-  },
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "parallelshell": "^3.0.1"
-  }
+    "name": "html-js-css-boilerplate",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build:scss": "node-sass --output-style compressed -o dist/styles src/styles",
+        "watch:scss": "onchange -i -v \"./src/styles/*.scss\" -- yarn run build:scss",
+        "lint:js": "eslint --fix ./src/js/*.js",
+        "watch:js": "onchange -i -v \"./src/js/*.js\" -- yarn run lint:js",
+        "start": "browser-sync -s -f \"./index.html, dist/**/*, src/**/*\"",
+        "dev": "parallelshell \"yarn start\" \"yarn run watch:scss\" \"yarn run watch:js\""
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "browser-sync": "^2.26.7",
+        "browsersync": "^0.0.1-security",
+        "node-sass": "^4.14.0",
+        "onchange": "^7.0.1"
+    },
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.1.0",
+        "eslint-plugin-import": "^2.20.2",
+        "parallelshell": "^3.0.1"
+    }
 }
